@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .borde {
+            border: 1px #000 solid;
+            text-align: center;
+            height: 50px;
+        }
+
+        .color1 {
+            background: #eeeeee;
+        }
+
+        .color2 {
+            background: blue;
+        }
+
+        .color3 {
+            background: yellow;
+        }
+
+        .color4 {
+            background: lime;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="borde color4 col-sm-12">HEADER</div>
+        </div>
+
+        <div class="row">
+            <div class="borde color1 col-sm-6 col-md-3 d-none d-sm-block">IZQUIERDA</div>
+            <div class="borde color2 col-sm-6 col-md-6">CONTENIDO</div>
+            <div class="borde color3 col-sm-12 col-md-3">DERECHA</div>
+        </div>
+        
+        <div class="row">
+            <div class="borde color4 col-sm-12">FOOTER</div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+</body>
+
+</html>

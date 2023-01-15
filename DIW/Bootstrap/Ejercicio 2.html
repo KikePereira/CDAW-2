@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .square{
+            padding: 85px 0px;
+        }
+        .rectangle{
+            padding: 20px;
+        }
+
+        .border {
+            border: 1px solid white;
+        }
+
+        .bg-green {
+            background-color: green;
+        }
+
+
+        .bg-orange {
+            background-color: orange;
+        }
+
+        .bg-aqua {
+            background-color: aqua;
+        }
+
+        .bg-blue {
+            background-color: blue;
+        }
+
+        .bg-gray {
+            background-color: gray;
+        }
+    </style>
+
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+    <div class="w-100">
+        <!-- CABECERA -->
+
+        <div class="row text-center">
+            <div class="col-12 bg-green border">Header</div>
+        </div>
+
+        <!-- GRUPO NUMEROS -->
+        <div class="row text-center">
+            <!-- 1-2 -->
+                <div class="col-6 col-sm-3 col-md-3 offset-md-3 bg-blue border square">1</div>
+                <div class="col-6 col-sm-3 col-md-3 bg-blue border square">2</div>
+                    
+                    <div class="w-100 d-none d-md-block"></div>
+                
+            <!-- 3-4 -->
+                <div class="col-6 col-sm-3 col-md-3 bg-blue border square">3</div>
+                <div class="col-6 col-sm-3 col-md-3 offset-md-6 bg-blue border square">4</div>
+        </div>
+        <!-- TABLET -->
+        <div class="row text-center">
+            <div class="col-12 bg-aqua border rectangle d-none d-sm-block d-md-none">Tablet</div>
+        </div>
+        <!-- GRUPO LETRAS -->
+        <div class="row text-center">
+            <div class="col-6 col-md-3 bg-gray border square order-md-4">a</div>
+            <div class="col-6 col-md-3 bg-gray border square order-md-3">b</div>
+            <div class="col-6 col-md-3 bg-gray border square order-md-2">c</div>
+            <div class="col-6 col-md-3 bg-gray border square order-md-1">d</div>
+        </div>
+        <!-- MOVIL -->
+        <div class="row text-center">
+            <div class="col-12 bg-aqua border rectangle d-block d-sm-none">Mobile</div>
+        </div>
+        <!-- PC -->
+        <div class="row text-center">
+            <div class="col-12 bg-aqua border rectangle d-md-none d-xl-block d-none ">Desktop</div>
+        </div>
+
+        <!-- GRUPO EMOJIS -->
+        <div class="row text-center">
+            <div class="col-sm-6 col-md-3 bg-orange border square order-md-2 col-12">:D</div>
+            <div class="col-6 col-md-3 bg-orange border square order-md-1 d-none d-md-block d-sm-block">:(</div>
+            <div class="col-6 col-md-3 d-none d-md-block"></div>
+        </div>
+        <!-- FOOTER -->
+        <div class="row text-center">
+            <div class="col-12 bg-green border">Footer</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/jquery-3.6.3.min.js"></script>
