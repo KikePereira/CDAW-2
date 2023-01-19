@@ -9,16 +9,82 @@
 </head>
 <body>
     <div id="app">
-        {{ message }}
-      </div>
+        {{ message }} <br>
+        <input v-model="message">
+    </div>
+    <br>
+    <div id="aplicacion">
+
+      Valor A:<input type="number" v-model.number="valorA" step="1"/> <br>
+      Valor B:<input type="number" v-model.number="valorB" step="1"/> <br> <br>
+      <h3>{{suma()}}</h1>
+</div>
+
+<div id="juego">
+  <h1>JUEGO</h1>
+  <h2 v-if="contador==3">Ya realizaste 3 tiros</h1>
+  <h2 v-else>Tiros:{{contador}}</h2>
+  <h3>Jugador 1: {{jugador1}}</h2>
+  <h3>Jugador 2: {{jugador2}}</h2>
+  <h2>{{resultado}}</h1>
+  <input type="button" :disabled="contador==3" v-on:click="jugar" value="Play">
+  <input type="button" v-if="contador==3" v-on:click="reset" value="Reset">
+</div>
+
 </body>
 </html>
 
 <script>
-    var app = new Vue({
-  el: '#app',
-  data: {
-    message: 'Hola Vue!'
+
+new Vue({
+  el:"#juego",
+  data:{
+    jugador1:0,
+    jugador2:0,
+    resultado:"--",
+    contador:0,
+  },
+  methods:{
+
+    reset:function(event){
+      this.jugador1=0;
+      this.jugador2=0;
+      this.resultado="--";
+      this.contador=0;
+    },
+
+    jugar:function(event){
+      this.jugador1=Math.round(Math.random()*10);
+      this.jugador2=Math.round(Math.random()*10);
+      if(this.jugador1>this.jugador2){
+        this.resultado="Ha ganado jugador 1!"
+      }else if(this.jugador1!=this.jugador2){
+        this.resultado="Ha ganado jugador 2!"
+      }else{
+        this.resultado="EMPATE!"
+      }
+      this.contador++;
+    },
   }
 })
+
+  var app=new Vue({
+    el:"#app",
+    data:{
+      message:"Hola Vue!",  
+    }
+  })
+
+  new Vue({
+    el:"#aplicacion",
+    data:{
+      valorA:0,
+      valorB:0,
+    },
+    methods:{
+      suma:function(){
+        return this.valorA+this.valorB;
+      }
+    },
+  })
 </script>

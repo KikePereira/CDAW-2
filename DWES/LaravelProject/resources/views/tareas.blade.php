@@ -37,16 +37,14 @@
     .filtrado{
         margin-left:60%;
     }
+
 </style>
 @endsection
 
-@section('content')
-<form action="/filtrado" class="filtrado" method="post">
-    <input type="text" placeholder="DNI" name="dni">
-    <input type="text" placeholder="Estado" name="estado">
-    <input type="text" placeholder="Operario" name="operario">
-    <input type="submit" value="Buscar">
-</form> <br>
+@section('content') 
+<br>
+<div class="row">
+
 <div class="list">
     <table class="table">
             <tr class="titles">
@@ -60,7 +58,7 @@
                 <th>Anotaciones iniciales</th>
                 <th></th>
             </tr>
-            <!-- 
+            @if(false)
             {% for tarea in tareas %}
                 <tr>
                     <td>{{tarea.tarea_id}}</td>
@@ -83,11 +81,15 @@
                     </td>
                 </tr>
             {% endfor %}
-             -->
+             @endif
+             
         </table>
         
-</div> <br>
-<!--  
+</div>
+</div>
+ <br>
+
+@if(false)
     <div class="paginacion">
             {% if paginaActual != 1  %}
             <a href="/tareas?page=1">[PRIMERA]</a>
@@ -105,5 +107,6 @@
             <span>[ULTIMA]</span>
             {% endif %}
         </div>
-        -->
+        @endif
+
 @endsection
