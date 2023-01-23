@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Tareas;
+use App\Models\tarea;
 
 class TareasController extends Controller
 {
@@ -14,7 +14,8 @@ class TareasController extends Controller
      */
     public function index()
     {
-        $tareas=Tareas::all();
+        $tareas=tarea::all();
+        $tareas = tarea::Simplepaginate(1);
         return view('tareas',['tareas'=>$tareas]);
     }
 

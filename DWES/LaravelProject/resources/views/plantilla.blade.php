@@ -46,7 +46,34 @@
         <!-- Fin sidebar -->
 
         <div class="w-100">
+        <!-- NAVBAR -->
+        <div id="navbar-container">
+        <nav class="navbar  navbar-light bg-primary border-bottom">
+            <div class="container">
+            <div class="logo" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <h4 class="text-light font-weight-bold mb-0">LOGO</h4>
+            </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                  <li class="nav-item dropdown">
+                  <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2"></i>
+                    Lista</a>
 
+                <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-people lead mr-2"></i>
+                    Usuarios</a>
+
+                <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-person lead mr-2"></i>
+                    Perfil</a>
+                <a href="#" class="d-block text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2"></i>
+                    Configuración</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </div>
         <!-- Page Content -->
         <div id="content" class="bg-grey w-100">
 

@@ -10,8 +10,8 @@ Tareas
 
 @section('contenido')
     <br>
-<div class="list">
-    <table class="table">
+<div class="container-fluid">
+    <table class="table bg-light">
             <tr class="titles bg-dark text-white">
                 <th>ID</th>
                 <th>Estado</th>
@@ -31,12 +31,15 @@ Tareas
                 <td>{{$tarea->cliente->Nombre}}</td>
                 <td>{{$tarea->Telefono}}</td>
                 <td>{{$tarea->Provincia}}</td>
-                <td>{{$tareas['id']}}</td>
-                <td>{{$tareas['id']}}</td>
-                <td>{{$tareas['id']}}</td>
+                <td>{{$tarea->Fecha_finalizacion}}</td>
+                <td>{{$tarea->Anotacion_inicio}}</td>
+                <td>
+                    <button class="btn btn-info">VER</button>
+                </td>
             </tr>
             @endforeach
         </table>
-        
+        <div class="">        {{$tareas->links()}}
+</div>
 </div>
 @endsection

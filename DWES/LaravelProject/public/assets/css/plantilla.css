@@ -64,8 +64,11 @@ a:hover {
     border-right: 1px solid var(--grey);
 }
 
+.paginacion{
+    width: 10%;
+}
   
-@media (max-width: 768px) {
+@media (max-width: 1110px) {
     #sidebar-container {
       display: none;
     }
@@ -73,3 +76,8 @@ a:hover {
         border: 0;
     }
   }
+@media(min-width:1110px){
+    #navbar-container{
+        display: none;
+    }
+}

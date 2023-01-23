@@ -5,13 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Tareas extends Model
+class tarea extends Model
 {
     protected $table='tarea';
     use HasFactory;
 
     public function empleado()
     {
-        return $this->belongsTo(Empleado::class);
+        return $this->belongsTo(empleado::class);
+    }
+
+    public function cliente()
+    {
+        return $this->belongsTo(cliente::class);
     }
 }
