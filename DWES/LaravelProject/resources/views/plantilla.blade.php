@@ -31,16 +31,16 @@
                 <img src="https://github.com/KikePereira/CDAW-2/blob/main/DWES/LaravelProject/resources/views/logo.png?raw=true" alt="" class="img">
             </div>
             <div class="menu">
-                <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2"></i>
-                    Lista</a>
-
-                <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-people lead mr-2"></i>
-                    Usuarios</a>
-
-                <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-person lead mr-2"></i>
-                    Perfil</a>
-                <a href="#" class="d-block text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2"></i>
-                    Configuración</a>
+                <!-- TAREAS -->
+                <div class="dropdown">
+                <h5 href="#" class="d-block text-white p-3" data-toggle="dropdown"><i class="icon ion-md-apps lead mr-2"></i>Tareas</h5>
+                    <ul class="dropdown-menu bg-primary border-0 ">
+                        <li class="sidebar-li"><a class="text-white" href="#"> <h6>Añadir</h6> </a></li>
+                        <li class="sidebar-li"><a class="text-white" href="#"> <h6>Pendientes</h6></a></li>
+                    </ul>
+                </div>
+                <!-- USUARIOS -->
+                <h5 href="#" class="d-block text-white p-3"><i class="icon ion-md-apps lead mr-2"></i>Usuarios</h5>
             </div>
         </div>
         <!-- Fin sidebar -->
@@ -50,10 +50,21 @@
         <div id="navbar-container">
         <nav class="navbar  navbar-light bg-primary border-bottom">
             <div class="container">
-            <div class="logo" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <div class="logo row" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="https://github.com/KikePereira/CDAW-2/blob/main/DWES/LaravelProject/resources/views/logo.png?raw=true" alt="" class="img-navbar">
+                <div class="col-6">
+                    <img src="https://github.com/KikePereira/CDAW-2/blob/main/DWES/LaravelProject/resources/views/logo.png?raw=true" alt="" class="img-navbar">
+                </div>
             </div>
+            <div class="col-3">
+                            <h1 class="font-weight-bold mb-0 text-white">Bienvenido @yield('usuario')</h1>
+                            <p class="lead text-muted">Ultima conexion: @yield('conexion')</p>
+                          </div>
+            <div class="col-3">
+            
+            <button class="btn btn-light w-100 align-self-center">Logout</button>
+            </div>
+
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
              
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
@@ -77,7 +88,7 @@
         <!-- Page Content -->
         <div id="content" class="bg-grey w-100">
 
-              <section class="bg-light py-3">
+              <section class="bg-light py-3" id="content-header">
                   <div class="container">
                       <div class="row">
                           <div class="col-lg-9 col-md-8">

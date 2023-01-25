@@ -15,7 +15,7 @@ class TareasController extends Controller
     public function index()
     {
         $tareas=tarea::all();
-        $tareas = tarea::Simplepaginate(1);
+        $tareas = tarea::Simplepaginate(5);
         return view('tareas',['tareas'=>$tareas]);
     }
 

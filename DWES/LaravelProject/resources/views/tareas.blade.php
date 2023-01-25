@@ -28,7 +28,7 @@ Tareas
                 <td>{{$tarea->id}}</td>
                 <td>{{$tarea->Estado}}</td>
                 <td>{{$tarea->empleado->Nombre}}</td>
-                <td>{{$tarea->cliente->Nombre}}</td>
+                <td>{{$tarea->cliente->Nombre}} {{$tarea->cliente->Apellidos}}</td>
                 <td>{{$tarea->Telefono}}</td>
                 <td>{{$tarea->Provincia}}</td>
                 <td>{{$tarea->Fecha_finalizacion}}</td>

@@ -1,3 +1,14 @@
+.dropdown-menu {
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 40px;
+    border-radius: 1em;
+}
+.sidebar-li{
+    margin-left: 10px;
+    border-bottom: 1px solid white;
+
+ }
 
 .img{
     width: 220px;
@@ -77,6 +88,9 @@ a:hover {
 @media (max-width: 1110px) {
     #sidebar-container {
       display: none;
+    }
+    #content-header{
+        display: none;
     }
     .stat {
         border: 0;

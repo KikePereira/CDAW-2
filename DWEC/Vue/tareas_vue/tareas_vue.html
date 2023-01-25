@@ -64,7 +64,7 @@
             </tr>
           </tbody>
         </table>
-        <h4>Total a cobrar: <span class="text-red"></span> </h4> 
+        <h4>Total a cobrar: {{total()}} <span class="text-red"></span> </h4> 
       </div>
     </div>
 
@@ -107,8 +107,14 @@
               1
             )
           },
-          total:function(tasks){
-            
+
+          total:function(){
+            var num=0;
+            for(i=0; i < this.tasks.lenght;i++){              
+              num= parseInt(num) + parseInt(this.tasks[i].price);
+            }  
+
+            return num;
           }
         }
       });
