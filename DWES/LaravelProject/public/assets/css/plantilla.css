@@ -1,4 +1,10 @@
 
+.img{
+    width: 220px;
+}
+.img-navbar{
+    width: 160px;
+}
 :root {
     --primary: #111B54;
     --light: #ffffff;

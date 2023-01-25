@@ -28,10 +28,7 @@
         <!-- Sidebar -->
         <div id="sidebar-container" class="bg-primary">
             <div class="logo">
-                <h4 class="text-light font-weight-bold mb-0">
-                    LOGO
-                </h4>
-                <img src="logo.png" alt="">
+                <img src="https://github.com/KikePereira/CDAW-2/blob/main/DWES/LaravelProject/resources/views/logo.png?raw=true" alt="" class="img">
             </div>
             <div class="menu">
                 <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2"></i>
@@ -55,7 +52,7 @@
             <div class="container">
             <div class="logo" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <h4 class="text-light font-weight-bold mb-0">LOGO</h4>
+                <img src="https://github.com/KikePereira/CDAW-2/blob/main/DWES/LaravelProject/resources/views/logo.png?raw=true" alt="" class="img-navbar">
             </div>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
              
