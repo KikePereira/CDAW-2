@@ -16,4 +16,8 @@ use App\Http\Controllers\TareasController;
 
 Route::get('/',[TareasController::class, 'index']);
 
+Route::get('/create',[TareasController::class, 'create']);
+
+Route::resource('addTareas', TareasController::class);
+
 

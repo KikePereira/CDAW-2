@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{asset('assets/css/plantilla.css')}}">
@@ -28,19 +28,25 @@
         <!-- Sidebar -->
         <div id="sidebar-container" class="bg-primary">
             <div class="logo">
-                <img src="https://github.com/KikePereira/CDAW-2/blob/main/DWES/LaravelProject/resources/views/logo.png?raw=true" alt="" class="img">
+                <a href="/"><img src="https://github.com/KikePereira/CDAW-2/blob/main/DWES/LaravelProject/resources/views/logo.png?raw=true" alt="" class="img"></a>
             </div>
             <div class="menu">
                 <!-- TAREAS -->
-                <div class="dropdown">
-                <h5 href="#" class="d-block text-white p-3" data-toggle="dropdown"><i class="icon ion-md-apps lead mr-2"></i>Tareas</h5>
-                    <ul class="dropdown-menu bg-primary border-0 ">
-                        <li class="sidebar-li"><a class="text-white" href="#"> <h6>Añadir</h6> </a></li>
-                        <li class="sidebar-li"><a class="text-white" href="#"> <h6>Pendientes</h6></a></li>
+                <div class="dropdown dropend">
+                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                        <span class="fs-4">Tareas</span>
+                    </button>                 
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/">Ver</a></li>
+                        <li><a class="dropdown-item" href="/create">Añadir</a></li>
+                        <li><a class="dropdown-item" href="#">Link 3</a></li>
                     </ul>
                 </div>
                 <!-- USUARIOS -->
-                <h5 href="#" class="d-block text-white p-3"><i class="icon ion-md-apps lead mr-2"></i>Usuarios</h5>
+                <div class="">
+                <button class="btn btn-primary"><span class="fs-4">Usuarios</span></button>
+                </div>
             </div>
         </div>
         <!-- Fin sidebar -->

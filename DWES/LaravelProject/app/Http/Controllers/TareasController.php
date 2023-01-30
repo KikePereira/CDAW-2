@@ -27,6 +27,8 @@ class TareasController extends Controller
     public function create()
     {
         //
+
+        return view('addTarea');
     }
 
     /**
@@ -38,6 +40,22 @@ class TareasController extends Controller
     public function store(Request $request)
     {
         //
+        $validated = $request->validate([
+            'nombre' => 'required',
+            'apellido' => 'required',
+            'dni' => 'required',
+            'telefono' => 'required',
+            'mail' => 'required',
+            'direccion' => 'required',
+            'codigo_postal' => 'required',
+            'poblacion' => 'required',
+            'provincia' => 'required',
+            'fecha_realizacion' => 'required',
+            'anotaciones' => 'required',
+
+        ]);
+        
+
     }
 
     /**
