@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,175 +14,326 @@
 
   <title>Mi Web</title>
   <style>
-    body{
-      background: linear-gradient(180deg, rgba(42,71,94,1) 0%, rgba(27,40,56,1) 35%, rgba(0,15,24,1) 100%);
+    .carrusel {
+      margin-top: 100px;
     }
-  .bg-1{
-    background: linear-gradient(90deg, rgba(61,68,80,1) 0%, rgba(35,38,46,1) 80%);
-  }
-  .bg-2{
-    background: linear-gradient(321deg, rgba(43,135,174,1) 20%, rgba(28,90,127,1) 96%);
-  }
 
-  .bg-offer{
-    background-color: #4c6b22;
-  }
+    body {
+      background: linear-gradient(180deg, rgba(42, 71, 94, 1) 0%, rgba(27, 40, 56, 1) 35%, rgba(0, 15, 24, 1) 100%);
+      background-size: cover;
 
-  .bg-offer2{
-    background-color: #344654;
-  }
-  
+      background-repeat: no-repeat;
+      height: 100%;
+      margin: 0;
+      background-attachment: fixed;
+    }
 
-  .text-offer{
-    color: #beee11;
-  }
-  
-  
+    .bg-1 {
+      background: linear-gradient(90deg, rgba(61, 68, 80, 1) 0%, rgba(35, 38, 46, 1) 80%);
+    }
 
-  #games{
-      background-image: url(img/bg1.gif);  
+    .bg-2 {
+      background: linear-gradient(321deg, rgba(43, 135, 174, 1) 20%, rgba(28, 90, 127, 1) 96%);
+    }
+
+    .bg-3 {
+      background: linear-gradient(90deg, rgba(59, 100, 144, 1) 40%, rgba(27, 56, 125, 1) 85%);
+    }
+
+    .offer {
+      border: 1px solid linear-gradient(90deg, rgba(59, 100, 144, 1) 40%, rgba(27, 56, 125, 1) 85%);
+    }
+
+    .bg-offer {
+      background-color: #4c6b22;
+    }
+
+    .bg-offer2 {
+      background-color: #344654;
+    }
+
+    .btn-offer {
+      background-color: #4c6b22;
+      color: #beee11;
+    }
+
+    .btn-offer:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .img-offer {
+      width: 500px;
+      height: 250px;
+      object-fit: cover;
+
+    }
+
+    .icon {
+      width: 70px
+    }
+
+
+    .text-offer {
+      color: #beee11;
+    }
+
+    .text-align-center {
+      line-height: auto;
+    }
+
+
+
+
+    #games {
+      background-image: url(img/bg1.gif);
       background-repeat: repeat-x;
       background-size: 75%;
-  }
-</style>
+    }
+  </style>
 </head>
+
 <body>
- <!-- NAVBAR-->
- <nav class="navbar navbar-expand-sm navbar-dark bg-1" id="navbar">
   <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-1 fixed-top" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
           <img src="img/logo.png" width="120px>">
-      </a>
-      
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Summer pack</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Summer pack</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
           </ul>
-      </div>
-  </div>
-</nav>
- <!-- NAVBAR-->
-<div class="row">
-  <!-- IZQ CAROUSEL -->
-  <div class="col-3 border m-4 mr-2 bg-2 pb-3 d-none d-lg-block">
-    <div class="row">
-      <img src="img/hades.jpg" class="p-0" alt="...">
-      <h3 class="text-left text-white mt-2 ml-2">OFERTA DIARIA</h3>
-      <div class="row">
-        <div class="col-2 bg-offer ml-4">
-          <h4 class="text-offer"> -88% </h4>
-        </div>
-        <div class="col-2 bg-offer2">
-          <p class="text-white">12,55 $</p>
-        </div>
-      </div>
-      <h4 class="text-center text-white mt-2">Hades</h4>
-      <p class="text-center text-white mt-2">Desafía al dios de los muertos mientras atacas a diestro y siniestro para salir del Inframundo en este juego de exploración de mazmorras de los creadores de Bastion y Transistor.</p>
-    </div>
-  </div>
-    <!-- CAROUSEL-->
-    <div id="carouselExampleDark" class="carousel arousel-dark slide bg-page col-12 col-lg-6 p-lg-1 mt-2" data-ride="carousel" >
-      <div class="carousel-inner">
-        <div class="carousel-item">
-          <img src="img/ride4.jpeg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item active">
-          <img src="img/hades.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/zomboid.jpg" class="d-block w-100" alt="...">
-        </div>
-<!-- CAROUSEL INDICATORS -->
-        <div class="carousel-indicators">
-          <a type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></a>
-          <a type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></a>
-          <a type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></a>
-        </div>
-
-        <!-- CAROUSEK CONTROL -->
-        <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-  </div>
-  <!-- CAROUSEL-->
-  <div class="col-3"></div>
-</div>
-
-
- <!-- GAMES-->
- <div id="games">
-  <div class="container-md p-5">
-    
-    <div class="row pt-5">
-        <h3 class="text-center pb-5 pt-5 h1 text-white  ">MAS VENDIDOS ESTA SEMANA </h3>
-    </div>
-
-    <div class="row">
-        <div class="col-sm">
-            <div class="card w-100 card-border mb-5">
-                <img src="img/hades.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Desafía al dios de los muertos mientras atacas a diestro y siniestro para salir del Inframundo en este juego de exploración de mazmorras de los creadores de Bastion y Transistor.</p>
-                  <button class="btn btn-primary">Ver</button>
-                </div>
+          <ul class="navbar-nav text-white ml-auto mr-5">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Usuario
+              </a>
+              <div class="dropdown-menu bg-1 border-0 p-3">
+                <p><a class="text-white text-decoration-none href="#">Mi cuenta</a></p>
+                <a class="text-white text-decoration-none" href="#">Cerrar Sesion</a>
               </div>
+            </li>
+          </ul>
         </div>
-        <div class="col-sm">
-            <div class="card w-100 card-border mb-5">
-                <img src="img/ride4.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">¿Estáis listos para vivir la mejor experiencia posible para un aficionado a las motocicletas? RIDE 4 avivará vuestra llama competitiva con cientos de motos, docenas de circuitos...</p>
-                  <button class="btn btn-primary">Ver</button>
+      </div>
+    </nav>
+    <!-- NAVBAR-->
+    <div class="row justify-content-center carrusel">
+      <!-- IZQ CAROUSEL -->
+      <div class="col-2 border m-2 bg-2 d-none d-xl-block">
+        <div class="row">
+          <img src="img/tarkov.jpg" class="p-0 img-offer" alt="...">
+          <h3 class="text-center mt-2 ml-2 text-offer">OFERTA ACTUAL</h3>
+          <div class="row text-center justify-content-center">
+            <div class="col-3 bg-offer ml-3">
+              <h4 class="text-offer">-88%</h4>
+            </div>
+            <div class="col-4 bg-offer2">
+              <p class="text-white">12,55 $</p>
+            </div>
+          </div>
+          <h4 class="text-center text-white mt-2">Escape From Tarkov</h4>
+          <p class="text-center text-white mt-2"></p>
+          <button class="btn btn-offer">Comprar</button>
 
-              </div>
-              </div>
         </div>
-        <div class="col-sm">
-            <div class="card w-100 card-border mb-5">
-                <img src="img/zomboid.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Project Zomboid is the ultimate in zombie survival. Alone or in MP: you loot, build, craft, fight, farm and fish in a struggle to survive. A hardcore RPG skillset, a vast map...</p>
-                  <button class="btn btn-primary">Ver</button>
 
-                </div>
-              </div>
+      </div>
+      <!-- CAROUSEL-->
+      <div id="carouselExampleDark" class="carousel col-12 col-xl-5 mt-2 ml-4 mr-4 h-100 p-0 " data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="img/ride4.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item active">
+            <img src="img/hades.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/zomboid.jpg" class="d-block w-100" alt="...">
+          </div>
+          <!-- CAROUSEL INDICATORS -->
+          <div class="carousel-indicators">
+            <a type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></a>
+            <a type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></a>
+            <a type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></a>
+          </div>
+
+          <!-- CAROUSEK CONTROL -->
+          <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
 
-      <div class="row py-5">
-        <div class="col">
-          <h3 class="text-center" style="color: var(--bs-blue)">More games on Nintendo.com:</h3>
+      <!-- DRCH CAROUSEL -->
+      <div class="col-2 m-2 border bg-2 d-none d-xl-block  ">
+        <div class="row">
+          <img src="img/ds3.png" class="p-0 img-offer" alt="...">
+          <h3 class="text-center mt-2 ml-2 text-offer">SIGUIENTE OFERTA</h3>
+          <div class="row text-center justify-content-center">
+            <div class="col-3 bg-offer ml-3">
+              <h4 class="text-offer">-88%</h4>
+            </div>
+            <div class="col-4 bg-offer2">
+              <p class="text-white">12,55 $</p>
+            </div>
+          </div>
+          <h4 class="text-center text-white mt-2">Dark Souls 3</h4>
+          <p class="text-center text-white mt-2"></p>
+          <button class="btn btn-offer">Comprar</button>
+
         </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-2"><a href="#">Nintendo Switch</a></div>
-        <div class="col-2"><a href="#">Nintendo 3DS</a></div>
-        <div class="col-1"><a href="#">Wii U</a></div>
-        <div class="col-1"><a href="#">Mobile</a></div>
-        <div class="col-1"><a href="#">Retro</a></div>
       </div>
     </div>
-  </div>  
-</div>
+
+    <!-- Biblioteca -->
+    <div class="row mt-5">
+      <!-- Acordeon -->
+      <div class="accordion" id="accordionExample">
+        <!-- ACORDEON 1 -->
+        <div class="card bg-1">
+          <div class="card-header" id="biblioteca">
+            <h2 class="mb-0">
+              
+              <button class="btn btn-link btn-block text-left text-white text-uppercase text-decoration-none"
+                type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                  <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+                </svg>  Biblioteca
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="biblioteca" data-parent="#accordionExample">
+            <div class="card-body">
+              <table class="table table-borderless text-center ">
+                <tr class="text-white">
+                  <th></th>
+                  <th>Titulo</th>
+                  <th>Logros</th>
+                  <th>Horas Jugadas</th>
+                  <th>Tamaño</th>
+                  <th></th>
+                </tr>
+
+                <tr class="text-white text-center">
+                  <td><img src="img/genshi_icon.png" alt="" class="icon"></td>
+                  <td class="text-align-center">Genshin Impact</td>
+                  <td>20/70</td>
+                  <td>112 hrs</td>
+                  <td>43 Gbs</td>
+                  <td>
+                    <button class="btn btn-success">Jugar</button>
+                  </td>
+                </tr>
+
+                <tr class="text-white text-center">
+                  <td><img src="img/god_icon.png" alt="" class="icon"></td>
+                  <td class="text-align-center">God Of War</td>
+                  <td>60/60</td>
+                  <td>63 hrs</td>
+                  <td>89 Gbs</td>
+                  <td>
+                    <button class="btn btn-primary">Instalar</button>
+                  </td>
+                </tr>
+
+                <tr class="text-white text-center">
+                  <td><img src="img/genshi_icon.png" alt="" class="icon"></td>
+                  <td class="text-align-center">Genshin Impact</td>
+                  <td>20/70</td>
+                  <td>112 hrs</td>
+                  <td>43 Gbs</td>
+                  <td>
+                    <button class="btn btn-primary">Instalar</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-1">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left text-white text-uppercase text-decoration-none"
+                type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                  <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                </svg>
+                   Lista de deseados
+              </button>
+            </h2>
+          </div>
+          <!-- ACORDEON 2 -->
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <table class="table table-borderless text-center ">
+                <tr class="text-white">
+                  <th></th>
+                  <th>Titulo</th>
+                  <th>Tamaño</th>
+                  <th>Precio</th>
+                  <th></th>
+                </tr>
+
+                <tr class="text-white text-center">
+                  <td><img src="img/genshi_icon.png" alt="" class="icon"></td>
+                  <td class="text-align-center">Genshin Impact</td>
+                  <td>43 Gbs</td>
+
+                  <td class="text-white"> 
+                      <span class="bg-offer2 p-2 text-white">19.99$</span>
+                      <button class="btn btn-offer">Comprar</button>
+                  </td>
+
+                </tr>
+
+                <tr class="text-white text-center">
+                  <td><img src="img/god_icon.png" alt="" class="icon"></td>
+                  <td class="text-align-center">God Of War</td>
+                  <td>89 Gbs</td>
+                  <td class="text-secondary">
+                    <span class="bg-offer2 p-2 text-white">59.99$</span>
+                    <button class="btn btn-offer">Comprar</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
 
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+
+
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
-</html>
+
 </html>
 
+</html>
