@@ -14,9 +14,12 @@ use App\Http\Controllers\TareasController;
 |
 */
 
-Route::get('/',[TareasController::class, 'index']);
-
-Route::get('/create',[TareasController::class, 'create']);
+Route::controller(TareasController::class)->group(function(){
+    Route::get('tareas','index');
+    Route::get('tareas/create','create');
+    Route::get('tareas/{id}','show');
+    
+});
 
 Route::resource('addTareas', TareasController::class);
 

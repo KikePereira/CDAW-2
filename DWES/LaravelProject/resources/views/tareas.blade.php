@@ -34,7 +34,18 @@ Tareas
                 <td>{{$tarea->Fecha_finalizacion}}</td>
                 <td>{{$tarea->Anotacion_inicio}}</td>
                 <td>
-                    <button class="btn btn-info">VER</button>
+                    <div class="row">
+                        <div class="col-3">
+                        <a href="/tareas/{{$tarea->id}}"><button class="btn btn-primary">Ver</button></a>
+                        </div>
+                        <div class="col-9">
+                        <form action="{{ url('/addTareas/'.$tarea->id)}}" method="post">
+                    @csrf
+                    {{method_field('DELETE')}}
+                    <input class="btn btn-danger" type="submit" value="Borrar" onclick="return confirm('¿Seguro?')">
+                    </form>
+                        </div>
+                    </div>
                 </td>
             </tr>
             @endforeach

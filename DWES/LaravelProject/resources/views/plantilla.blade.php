@@ -38,9 +38,8 @@
                     </button>                 
 
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/">Ver</a></li>
-                        <li><a class="dropdown-item" href="/create">Añadir</a></li>
-                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        <li><a class="dropdown-item" href="/tareas">Ver</a></li>
+                        <li><a class="dropdown-item" href="/tareas/create">Añadir</a></li>
                     </ul>
                 </div>
                 <!-- USUARIOS -->

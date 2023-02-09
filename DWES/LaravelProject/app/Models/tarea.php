@@ -10,6 +10,7 @@ class tarea extends Model
     protected $table='tarea';
     use HasFactory;
 
+
     public function empleado()
     {
         return $this->belongsTo(empleado::class);
@@ -19,4 +20,6 @@ class tarea extends Model
     {
         return $this->belongsTo(cliente::class);
     }
+
+    public $timestamps =false;
 }
